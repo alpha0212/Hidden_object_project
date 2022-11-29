@@ -1,5 +1,10 @@
 import React from 'react';
+import { Routes, Route } from 'react-router';
 
-export const App = () => {
-  return <div className="App">asd</div>;
+export const App: React.FC = () => {
+  return (
+    <Routes>
+      <Route index element={} />
+    </Routes>
+  );
 };

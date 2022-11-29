@@ -1,12 +1,10 @@
-	
-/* tsconfig.paths.json 생성 */
- 
 {
-    "compilerOptions": {
-      "baseUrl": ".",
-      "paths": {
-        "@/*": ["src/*"]
-        // 또는 "@components/*": ["src/components/*"] 처럼 지정 가능
-      }
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "pages/*": ["src/pages/*"],
+      "components/*": ["src/components/*"],
+      "styles/*": ["src/styles/*"]
     }
   }
+}
