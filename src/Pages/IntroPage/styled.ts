@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Link } from 'react-router-dom';
 
 export const IntroContainer = styled.div`
   display: flex;
@@ -21,7 +22,7 @@ export const MainIntro = styled.div`
   font-size: 2.5rem;
   font-family: 'ONE-Mobile-POP';
   color: white;
-  margin-top: 25rem;
+  margin-top: 30rem;
   animation: MainIntro 3s infinite;
   @keyframes MainIntro {
     50% {
@@ -36,6 +37,13 @@ export const MainIntro = styled.div`
     font-weight: normal;
     font-style: normal;
   }
+`;
+
+export const rainbow = styled(Link)`
+  padding-top: 3.5rem;
+  background-image: linear-gradient(90deg, red, orange, yellow, green);
+  background-clip: text;
+  color: transparent;
 `;
 
 export const GoToMain = styled.div`

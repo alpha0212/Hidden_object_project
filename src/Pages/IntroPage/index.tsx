@@ -5,9 +5,9 @@ export const IntroPage: React.FC = () => {
   return (
     <S.IntroContainer>
       <S.IntroBackground>
-        <S.MainIntro>어 반가워</S.MainIntro>
+        <S.MainIntro>숨은그림찾기</S.MainIntro>
         <S.GoToMain>
-          <div style={{ paddingTop: '3.5rem' }}>숨은그림찾기 하러 가기</div>
+          <S.rainbow to="/main">게임하러 가기</S.rainbow>
         </S.GoToMain>
       </S.IntroBackground>
     </S.IntroContainer>
