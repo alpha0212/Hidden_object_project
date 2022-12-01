@@ -10,7 +10,8 @@ export const globalStyle = css`
     --color-primary-darker: #39933d;
 
     --color-border: #e2e3eb;
-    --color-background: #f4f8fd;
+
+    --color-background: rgba(64, 65, 109);
     --color-text-primary: #1d1c24;
     --color-text-secondary: #848894;
     --color-text-description: #6a6a6a;
@@ -26,8 +27,16 @@ export const globalStyle = css`
     --color-flex: var(--price-level-5);
   }
 
+  @font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff')
+      format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
   * {
-    font-family: 'Spoqa Han Sans Neo', 'Robot', sans-serif;
+    font-family: 'ONE-Mobile-POP';
   }
 
   html {
@@ -38,7 +47,7 @@ export const globalStyle = css`
   body {
     font-size: 1.6rem;
     font-weight: 400;
-    font-family: 'Spoqa Han Sans Neo', 'Robot', sans-serif;
+    font-family: 'ONE-Mobile-POP';
     letter-spacing: -0.05rem;
     color: var(--color-text-primary);
     background-color: var(--color-background);

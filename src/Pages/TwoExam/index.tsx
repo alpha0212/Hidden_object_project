@@ -2,12 +2,12 @@ import React from 'react';
 import * as S from './styled';
 
 //components
-import { OneObject } from 'components';
+import { TwoObject } from 'components';
 
-export const MainPage: React.FC = () => {
+export const TwoExam: React.FC = () => {
   return (
     <S.MainContainer>
-      <OneObject />
+      <TwoObject />
     </S.MainContainer>
   );
 };
