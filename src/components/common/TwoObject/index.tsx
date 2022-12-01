@@ -1,9 +1,11 @@
 import React from 'react';
 import * as S from './styled';
+
 export interface TwoObjectType {
   answered: boolean;
   answerClick: any;
 }
+
 export const TwoObject: React.FC<TwoObjectType> = ({
   answered,
   answerClick,
