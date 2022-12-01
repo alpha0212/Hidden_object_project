@@ -5,22 +5,12 @@ export const OneObjectContainer = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-
+  padding-bottom: 30rem;
   position: absolute;
 `;
 
 export const OneObjectClickContainer = styled.div`
   margin: auto;
-`;
-
-export const OneObjectTitle = styled.div`
-  width: 100%;
-  text-align: center;
-  color: white;
-  letter-spacing: 1px;
-  font-size: 2rem;
-  margin: 6rem 0 2rem 0;
-  z-index: 99;
 `;
 
 export const OneObject = styled.div`

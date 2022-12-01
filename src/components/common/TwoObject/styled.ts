@@ -1,26 +1,15 @@
 import styled from '@emotion/styled';
 
 export const TwoObjectContainer = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 68%;
+  height: 50%;
   display: flex;
-  flex-direction: column;
-
   position: absolute;
-  padding-top: 100rem;
+  padding-bottom: 40rem;
 `;
 
 export const TwoObjectClickContainer = styled.div`
   margin: auto;
-`;
-
-export const TwoObjectTitle = styled.div`
-  text-align: center;
-  color: white;
-  letter-spacing: 1px;
-  font-size: 2rem;
-  margin: 6rem 0 2rem 0;
-  z-index: 99;
 `;
 
 export const TwoObject = styled.div`
@@ -36,8 +25,7 @@ export const Click = styled.div<{ answered: boolean }>`
   position: relative;
   width: 3rem;
   padding-top: 3rem;
-  background: black;
-  border: ${(props) => (props.answered ? '1rem solid red' : 'nTwo')};
+  border: ${(props) => (props.answered ? '0.5rem solid green' : 'none')};
   border-radius: 4rem;
   margin-left: 8.3rem;
   margin-top: 26rem;

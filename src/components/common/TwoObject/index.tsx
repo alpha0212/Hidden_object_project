@@ -1,17 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import * as S from './styled';
-
-export const TwoObject: React.FC = () => {
-  const [answered, setAnswered] = useState(false);
-  const answerClick = () => {
-    setAnswered(true);
-    alert('정답입니다');
-  };
+export interface TwoObjectType {
+  answered: boolean;
+  answerClick: any;
+}
+export const TwoObject: React.FC<TwoObjectType> = ({
+  answered,
+  answerClick,
+}) => {
   return (
     <S.TwoObjectContainer>
-      <S.TwoObjectTitle>
-        2번. 버섯 사이에 쥐가 살고 있어요! 잡아주세요!
-      </S.TwoObjectTitle>
       <S.TwoObjectClickContainer>
         <S.TwoObject />
         <S.Click answered={answered} onClick={answerClick} />
